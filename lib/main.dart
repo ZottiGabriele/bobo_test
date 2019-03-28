@@ -34,6 +34,7 @@ class MyHomePage extends StatelessWidget {
               height: NavigationToolbar.kMiddleSpacing * 3,
               child: Center(),
             ),
+            TopBar(),
             Body(),
             BottomBar("Prossime partite"),
           ],
@@ -47,36 +48,7 @@ class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Expanded(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: <Widget>[
-          Container(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: <Widget>[
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(24, 8.0, 24, 0),
-                  child: Text(
-                    "Attic",
-                    style: TextStyle(fontSize: 23, color: Colors.black26),
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(24, 8.0, 24, 16),
-                  child: Text(
-                    "BoboCup2k19",
-                    style: TextStyle(
-                      fontSize: 33,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ),
-                TopBar(0),
-              ],
-            ),
-          )
-        ],
-      ),
+      child: Center(child: Text("My name is Jeff")),
     );
   }
 }

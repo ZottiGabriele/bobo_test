@@ -9,7 +9,7 @@ class BottomBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 210,
+      height: 190,
       child: Stack(
         children: <Widget>[
           ClipPath(
